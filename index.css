@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 12px;
+  font-size: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 65px;
+  background-color: rgba(34, 34, 34, 0.832);
+
+}
+
+.navbar-logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.navbar-item {
+  margin: 0 20px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+.navbar-item:hover {
+
+  text-shadow: 0 0 42px rgba(178, 96, 255, 0.9), 24px 0 32px rgba(178, 96, 255, 0.9), 0 0 26px rgba(178, 96, 255, 0.744);
+}
+
+.container {
+  background-color: rgba(34, 34, 34, 0.832);
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.content {
+
+  padding: 10% 65px;
+  min-width: 60%;
+}
+
+.intro>h2 {
+  padding: 20px 0px;
+  color: #c053e8;
+}
+
+.intro h3 {
+  font-size: 52px;
+  font-weight: 800;
+
+}
+
+.content>div>p {
+  line-height: 25px;
+  padding: 20px 0px;
+}
+
+.image {
+  max-width: 100%;
+  text-align: left;
+  position: relative;
+  max-height: 100%;
+
+}
+
+.image>img {
+  position: relative;
+  right: 10%;
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  border-radius: 25% 25%;
+  border: 2px solid white;
+  box-shadow: 0 0 42px rgba(178, 96, 255, 0.744), 0 0 8px rgba(178, 96, 255, 0.744), 6px 6px 6px rgba(178, 96, 255, 0.744);
+}
+
+
+button {
+  padding: 20px 25px;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  /* border: 1px solid white; */
+  margin: 20px 20px 0px 0px;
+  box-shadow: 0 0 12px rgba(178, 96, 255, 0.744), 0 0 8px rgba(255, 255, 255, 0.674), 6px 0 6px rgba(178, 96, 255, 0.744);
+
+}
+
+button:hover {
+  background-color: #c053e8;
+}
+
+.container2 {
+  background-color: rgba(115, 115, 115, 0.414);
+  display: flex;
+  justify-content: center;
+
+}
+
+.content2 {
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+  padding: 100px 0;
+
+}
+
+.About {
+  flex: 1;
+  padding: 0 50px;
+  position: relative;
+}
+
+.About>h2 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+
+.About p {
+  font-size: 16px;
+  font-weight: 300;
+
+}
+
+.About h6 {
+  padding: 15px 0 10px 0;
+  font-size: 18px;
+}
+
+.image2 {
+  max-width: 30%;
+  max-height: 100%;
+}
+
+.image2>img {
+  position: relative;
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  /* border-radius: 70%; */
+  border: 2px solid #c053e8;
+  /* box-shadow: 0 0 42px rgba(178, 96, 255, 0.744), 0 0 8px rgba(178, 96, 255, 0.744), 6px 6px 6px rgba(178, 96, 255, 0.744); */
+}
+
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.progress-bar-value {
+  width: 90%;
+  /* Change this to your desired initial value */
+  height: 100%;
+  background-color: #c053e8;
+  /* Change this to your desired color */
+}
+
+.tooltip {
+  position: absolute;
+  top: 36%;
+  /*Adjust the distance of the tooltip from the progress bar */
+  transform: translateX(-50%);
+  background-color: white;
+  color: #c053e8;
+  padding: 6px;
+  border-radius: 4px;
+  display: block;
+  right: 10%;
+  font-weight: 300;
+}
+
+.progress-bar-value2 {
+  width: 60%;
+  /* Change this to your desired initial value */
+  height: 100%;
+  background-color: #c053e8;
+  /* Change this to your desired color */
+}
+
+.tooltip2 {
+  position: absolute;
+  top: 52%;
+  /*Adjust the distance of the tooltip from the progress bar */
+  transform: translateX(-50%);
+  background-color: white;
+  color: #c053e8;
+  padding: 6px;
+  border-radius: 4px;
+  display: block;
+  right: 36%;
+  font-weight: 300;
+}
+
+.progress-bar-value3 {
+  width: 40%;
+  /* Change this to your desired initial value */
+  height: 100%;
+  background-color: #c053e8;
+  /* Change this to your desired color */
+}
+
+.tooltip3 {
+  position: absolute;
+  top: 68%;
+  /*Adjust the distance of the tooltip from the progress bar */
+  transform: translateX(-50%);
+  background-color: white;
+  color: #c053e8;
+  padding: 6px;
+  border-radius: 4px;
+  display: block;
+  right: 54%;
+  font-weight: 300;
+}
+
+.progress-bar-value4 {
+  width: 50%;
+  /* Change this to your desired initial value */
+  height: 100%;
+  background-color: #c053e8;
+  /* Change this to your desired color */
+}
+
+.tooltip4 {
+  position: absolute;
+  top: 84%;
+  /*Adjust the distance of the tooltip from the progress bar */
+  transform: translateX(-50%);
+  background-color: white;
+  color: #c053e8;
+  padding: 6px;
+  border-radius: 4px;
+  display: block;
+  right: 45%;
+  font-weight: 300;
+}
+
+.container3 {
+  background-color: rgba(34, 34, 34, 0.832);
+  text-align: center;
+}
+
+.wrap>h2 {
+  padding: 20px 0 30px 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.wrap {
+  padding: 5% 0;
+}
+
+.content3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 25px;
+  padding: 0 65px;
+}
+
+.content3 div img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8), 0 0 6px rgba(255, 255, 255, 0.8), 0 0 6px rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease-in-out;
+}
+
+.content3 div :hover {
+
+  box-shadow: 0 0 6px rgba(178, 96, 255, 0.744), 0 0 6px rgba(178, 96, 255, 0.744), 0 0 6px rgba(178, 96, 255, 0.744);
+  transform: scale(1.11);
+}
+
+.container4 {
+  background-color: rgba(115, 115, 115, 0.414);
+  text-align: center;
+}
+
+.content4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 50px;
+  padding: 0 65px;
+}
+
+.skill-main {
+  padding-bottom: 50px;
+}
+
+.web-design {
+  background-color: #fff;
+  max-width: 100%;
+  min-height: 100%;
+  text-align: left;
+  padding: 10px;
+  color: black;
+}
+
+.web-design img {
+  width: 80px;
+  height: auto;
+}
+
+.web-design div {
+  padding: 10px 10px 5px 10px;
+}
+
+.skill-title {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 0 10px 0;
+}
+
+.skill-descrip {
+  font-weight: 300;
+}
+
+#common {
+  background-color: #dd84fe;
+
+}
+
+.container5 {
+  background-color: rgba(34, 34, 34, 0.832);
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.content5 {
+
+  padding: 5% 65px;
+  width: 100%;
+
+}
+
+.Contact>h2 {
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.form {
+  max-width: 40%;
+  margin: 0 auto;
+}
+
+form {
+  min-width: 100%;
+  padding: 10% 0;
+  
+}
+
+input {
+  width: 100%;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color: white;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid white;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit] {
+  font-size: 16px;
+  background-color: #c053e8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(178, 96, 255, 0.744), 0 0 8px rgba(255, 255, 255, 0.674), 6px 0 6px rgba(178, 96, 255, 0.744);
+}
+
+input[type=submit]:hover
+{
+  background-color: transparent;
+}
+
+
+.container6 {
+  
+  background-color: rgba(115, 115, 115, 0.414);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container6 h6
+{
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.footer-nav
+{
+  background-color: transparent;
+  padding: 0;
+}
+.footer-nav ul li
+{
+  padding: 20px 10px;
+  margin: 0;
+  font-size: 16px;
+}
